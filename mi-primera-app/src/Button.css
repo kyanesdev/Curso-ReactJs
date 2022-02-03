@@ -1,0 +1,11 @@
+.btn{
+    transition: all 0.3 ease-in-out;
+    background-color: #569;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+}
+
+.btn:hover{
+    background-color: #58D68D;
+}
