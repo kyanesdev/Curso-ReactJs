@@ -1,24 +1,37 @@
 import logo from './logo.svg';
-import './App.css';
+//import './App.css';
+import './main.css';
 
-function App() {
+const estilo2 = {
+  boxShadow: '0 5px 3px rgba(0, 0, 0, 0.5)'
+}
+
+const estilo = ({bg = '#222'})=> ({
+  backgroundColor: bg,
+  color: '#fff',
+  padding: '2rem',
+  margin: '10px 15px'
+})
+
+const Li = ({children})=>{
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Editado <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <li className='clase-li'>{children}</li>
+  )
+}
+
+
+//Un componente de react puede ser declarado como funcion
+//o tambien puede ser declarado como una constante con la arrow function
+function App() {
+
+  return (
+    <ul className="clase-css">
+
+      <Li estado="sadly">valor de li</Li>
+
+    </ul> 
   );
 }
 
